@@ -1,0 +1,34 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(84, 81, 81);
+}
+footer #izqFooterArt{
+    padding: 33px 0px 33px 86px;
+}
+footer #izqFooterArt h2 {
+    color: white;
+}
+footer #izqFooterArt p {
+    color: white;
+}
+footer #izqFooterArt a{
+    color: white;
+    text-decoration: none;
+}
+#derFooterArt{
+    padding: 103px 106px 33px 33px;
+}
+
+#redSociViv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+#redSociViv h2{
+    font-size: 53px;
+    margin: 33px;
+}

@@ -1,0 +1,113 @@
+
+/*______________________________________ div oculto para mostrar imágenes en localStore*/
+#oculto {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    display: none;
+    padding: 5px;
+    /*----------- Fin container*/
+    /*----------- Fin divFinal*/
+  }
+  #oculto #container {
+    /*----------- etiqueta puesta en index.php*/
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: row;
+    /*lateral izquierdo de divOculto: contiene tres textarea y dos buttons*/
+    /*lateral derecho de divOculto: contiene tres div: 'divFlecha <-, divImagen, divFlecha ->'*/
+  }
+  #oculto #container #a-container {
+    flex-basis: 27%;
+    margin: 5px;
+    border: solid white 1px;
+  }
+  #oculto #container #a-container #lateOcul {
+    /*----------- etiqueta puesta en index.php*/
+    margin: 0px;
+    padding: 0px 6px;
+  }
+  
+  #oculto #container #a-container #lateOcul textarea {
+    resize: none;
+    margin-bottom: 7px;
+  }
+  #oculto #container #a-container #lateOcul textarea:hover {
+    background-color: #3bcde7;
+    color: white;
+  }
+  #oculto #container #a-container #lateOcul button {
+    margin-bottom: 7px;
+    padding: 5px 22px;
+    font-size: 17px;
+    font-family: "MochiyPopPOne";
+  }
+  #oculto #container #a-container #lateOcul button:hover {
+    background-color: #f71037;
+    color: white;
+  }
+  #oculto #container #b-container {
+    flex-basis: 73%;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+  }
+  #oculto #container #b-container #left {
+    /*----------- etiqueta puesta en index.php*/
+    flex-basis: 10%;
+  }
+  #oculto #container #b-container #left span h1 {
+    font-size: 73px;
+    text-align: center;
+    line-height: 300px;
+  }
+  #oculto #container #b-container #center {
+    /*----------- etiqueta puesta en index.php*/
+    flex-basis: 80%;
+  }
+  #oculto #container #b-container #center img {
+    /*----------- etiqueta puesta en index.php*/
+    width: 100%;
+    height: auto;
+  }
+  #oculto #container #b-container #right {
+    /*----------- etiqueta puesta en index.php*/
+    flex-basis: 10%;
+  }
+  #oculto #container #b-container #right span h1 {
+    font-size: 73px;
+    text-align: center;
+    line-height: 300px;
+  }
+  #oculto #divFinal {
+    /*----------- etiqueta puesta en index.php*/
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 70%;
+  }
+  #oculto #divFinal p {
+    line-height: 3px;
+  }
+  #oculto #divFinal .divIndice:hover {
+    background-color: black;
+  }
+  #oculto #divFinal .divIndice:hover p {
+    color: white;
+    font-size: 22px;
+  }
+  
+  /*----------- Fin #general oculto*/
+  @media (max-width: 933px) {
+    #oculto #container {
+      display: flex;
+      flex-direction: column;
+    }
+    #oculto #divFinal {
+      margin-top: -85px;
+    }
+  }

@@ -1,0 +1,8 @@
+El archivo .js se utiliza para llamar a funciones jquery, (lo utilizo para relentizar la apertura de ventanas con la función: 
+
+<script>
+        $(function(){
+          $("body").hide( ).fadeIn(3000); //para que aparecca el body lentamente.
+        });
+      </script>
+)

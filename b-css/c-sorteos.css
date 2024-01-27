@@ -1,0 +1,159 @@
+
+.modal {
+    max-width: 100%;
+    height: auto;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 997;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0008;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 500ms ease-in-out;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-container {
+    position: relative;
+    border: thick double #d00;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 66%;  
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    line-height: 3rem;
+    color: #fff;
+    background-color: #d00;
+    transition: background-color 300ms linear, transform 300ms ease-in-out;
+}
+
+.modal-close:hover {
+    background-color: #a00;
+    transform: scale(1.2);
+}
+
+body{
+font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.eleccion{/*-------- botones para elegir el tipo de sorteo. */
+    background-color: greenyellow;
+    padding: 3px 3px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.eleccion:hover{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+#muestraResult{/*-------- div donde se muestran los nº del sorteo y los nº elegidos. */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    margin-top: 33px;
+    width: 51%;
+    border: solid 1px red;
+} 
+
+
+.divBola{
+    display: flex;
+    justify-content: center;
+
+    width: 26px;
+    height: auto;                       
+    border-radius: 9px;
+    border: solid white 1px;     
+    margin: 4px 2px;
+    padding: 5px;
+    color: white;
+}
+.divBola:hover{
+    border: solid blue 1px;     
+    color: blue;
+}
+
+h2{
+    font-size: 22px;
+}
+
+#reintegro-muestraResult{/*-------- div donde se muestran los nº Estrella y los Nº Clave. */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 33px;
+    width: 51%;
+    border: solid 1px red;
+}
+
+.estrellas{/*-------- clase de divs donde se muestran los nº Estrella*/
+    display: flex;
+    justify-content: center;
+    border: solid white 1px;
+    border-radius: 39px;
+    color: white;
+}
+.estrellas:hover{
+    border: solid blue 1px;     
+    color: blue;
+    background-color: greenyellow;
+}
+
+.numClave{/*-------- clase de divs donde se muestran los Nº Clave. */
+    display: flex;
+    justify-content: center;
+    border: solid white 1px;
+    border-radius: 39px;
+    color: white;
+    
+}
+.numClave:hover{
+    border: solid blue 1px;     
+    color: blue;
+    background-color: greenyellow;
+}
+
+@media (max-width:833px){
+    #muestraResult,
+    #reintegro-muestraResult{
+        width: 100%;
+        margin-top: 13px;
+    }
+    
+}
+@media (max-width:533px){
+    #muestraResult,
+    #reintegro-muestraResult{
+        width: 100%;
+        margin-top: 13px;
+    }  
+}

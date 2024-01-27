@@ -1,0 +1,135 @@
+
+@font-face {
+  /* página para ver letras/iconos:  https://fonts2u.com/websymbols-regular.font   */
+  font-family: "FontAwesome";
+  src: url("fonts/fontawesome-webfont.eot");
+  src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /* página para ver letras/iconos:  https://fonts2u.com/websymbols-regular.font   */
+  font-family: "Websymbols";
+  src: url("../fonts/Websymbols/websymbols-regular-webfont.eot");
+  src: url("../fonts/Websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/Websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/Websymbols/websymbols-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+  /* 
+    12 = tamaño de letra más pequeño
+    17 = tamaño de letra más grande
+    300 = tamaño de viewport más pequeño
+    1400 = tamaño de viewport más grande
+  */
+.granSize{
+  font-size: calc(12px + (17 -12) * ((100vw - 300px) / (1400 - 300)));
+}
+.medianoSize{
+font-size: calc(10px + (13 -10) * ((100vw - 300px) / (1400 - 300)));
+}
+.pequenoSize{
+font-size: calc(8px + (12 -8) * ((100vw - 300px) / (1400 - 300)));
+}
+
+
+#navDiv {
+  margin-top: 95px;
+  padding: 0px 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgb(179, 238, 52);
+}
+@media (max-width: 1100px){
+  #navDiv {
+    margin-top: 150px;
+  }
+}
+@media (max-width: 800px){
+  #navDiv {
+    margin-top: 200px;
+  }
+}
+@media (max-width: 400px){
+  #navDiv {
+    margin-top: 250px;
+  }
+}
+@media (max-width: 300px){
+  #navDiv {
+    margin-top: 300px;
+  }
+}
+@media (max-width: 290px){
+  #navDiv {
+    margin-top: 400px;
+  }
+}
+#navDiv article{
+  margin-top: 10px;
+  padding: 0px 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#navDiv ul{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+}
+#navDiv   a {
+  text-decoration: none;
+  font-size: 19px;
+}
+#navDiv ul li ul{
+display: none;
+  position: absolute;
+  width: 160px;
+  box-shadow: 0px 2px 2px grey;/* ---------- para poner sombra.*/
+  
+  z-index: 1;/* ---------- para que se superponga sobre los demás.*/
+
+}
+#navDiv ul li:hover ul{
+  display: block;
+  width: 160px;
+  background-color: 0px 2px 2px grey;;
+}
+#navDiv ul li:hover ul li{
+ 
+  background-color: 0px 2px 2px grey;;
+}
+
+ 
+#navDiv form{
+  padding-top: 11px;
+  justify-content: end;
+}
+
+
+
+#general {
+  display: flex;
+  flex-direction: column;
+  /*------------ Fin main*/
+  /*------------ Fin footer*/
+}
+#general header {
+  margin: 55px 54px;
+}
+#general main {
+  margin: 0px 54px;
+  /*------------ Fin #a-section-main*/
+  /*------------ Fin media (max-width: 1017px*/
+  /*------------ Fin media (max-width: 595px) */
+  /*------------ Fin #b-section-main*/
+  /*------------ Fin media (max-width: 1017px*/
+  /*------------Finmedia(max-width:;*/
+}
+#general main h2 {
+  text-align: center;
+   
+}

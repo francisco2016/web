@@ -1,0 +1,138 @@
+footer {
+  background-image: url(../c-img/fondo.jpg);
+  background-size: 200%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 102%;
+  
+  padding-left: 23px;
+  padding-right: 23px;
+  max-width: 1500px;
+  animation: movimiento 15s infinite linear alternate-reverse;
+  -webkit-animation: movimiento 25s infinite linear alternate-reverse;
+}
+
+footer #x-seccion-footer h5 {
+  padding: 4px 7px;
+  
+  font-size: 15px;
+  margin-top: 31px;
+}
+footer #y-seccion-footer a {
+  text-decoration: none;
+}
+
+
+footer #z-seccion-footer {
+  display: flex;
+  flex-direction: row;
+}
+footer #z-seccion-footer .redSoc a {
+  text-decoration: none;
+}
+footer #z-seccion-footer .redSoc a h2 {
+  margin: 17px 11px 17px 11px;
+  font-size: 30px;
+  font-family: "Websymbols";
+  color: RGB(255, 255, 255);
+}
+footer #z-seccion-footer .redSoc a h2:hover {
+  color: #2600ff;
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+@media (max-width: 833px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer h5 {
+    text-align: center;
+  }
+  footer #z-seccion-footer .redSoc a h5 {
+    text-align: right;
+    font-size: 11px;
+  }
+
+  .schopenhauer-container h3 {
+    font-size: 3vw;
+    text-align: center;
+  }
+      
+  .schopenhauer-container p {
+      font-size: 2vw;
+      line-height: 3rem;
+  }
+
+}
+
+
+#seccionFinal{
+    background-color: black;
+}
+
+#secFinH3{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+    font-size: 15px;
+    color: white;
+    margin: 19px 0px;
+}
+a{
+    font-size: 15px;
+    text-decoration: none;
+    color: RGB(176,190,157);
+}
+
+@keyframes introschopenhauer {
+    0% {
+        transform: perspective(100vh) rotateX(15deg) translateY(100%);
+    }
+    
+    100% {
+        transform: perspective(100vh) rotateX(25deg) translateY(-200%);
+    }
+}
+    
+.schopenhauer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 20vh;
+    overflow: hidden;
+    color: #ffb13a;
+    background-image: url("../c-img/cosmos.jpg");
+}
+    
+.schopenhauer-container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: justify;
+    letter-spacing: 0.1rem;
+    animation: introschopenhauer 20s linear infinite;
+    -webkit-animation: introschopenhauer 20s linear infinite;
+}
+    
+.schopenhauer-container h3 {
+    font-size: 5vw;
+    text-align: center;
+}
+    
+.schopenhauer-container p {
+    font-size: 3vw;
+    line-height: 4rem;
+}
+     

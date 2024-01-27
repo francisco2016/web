@@ -1,0 +1,54 @@
+
+/*_____ Estilo para imágenes de modelos de páginas Web en página principal*/
+
+#modelosDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+     
+    background-image: url(../c-img/pattern.png);
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+}
+.enunModelosH2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    
+}
+.masSuplementos{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 44px;
+}
+#modelosDiv .modelArt{
+    border: solid black 2px;
+    border-radius: 6px;
+    width: 23%;
+    margin: 33px;
+    padding: 7px;
+}
+#modelosDiv .modelArt img{
+    border: solid black 2px;
+    border-radius: 6px;
+    transition: transform 1.2s;/* ______*/
+    width: 99%;
+    height: 99%;/* ______*/
+    display: block;
+    margin: auto;
+}
+#modelosDiv .modelArt img:hover {
+    /*filter: opacity(.7);*/
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    -moz-transform: scale(1.1); /* firefox */
+    transform: scale(1.1); 
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+}
+
+

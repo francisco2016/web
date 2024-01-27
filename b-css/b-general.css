@@ -1,0 +1,275 @@
+#general {
+    display: flex;
+    flex-direction: column;
+    max-width: 1500px;
+   /* width: 100%;*/
+    margin: auto;
+    margin-top: 1px;
+    border-radius: 11px 11px 4px 4px;
+
+    background-color: #E5E5E5;
+  }
+  #general #a-sectionContenido {
+    display: flex;
+    flex-direction: row;
+    margin-top: 18px;
+    margin-left: 11px;
+    margin-right: 11px;
+    
+  }
+
+
+  /*___________________________________________ LATERAL IZQUIERDA ______________*/
+  #general #a-sectionContenido main {
+    width: 75%;
+    border: indigo solid 1px;
+    float: left;
+    margin: 0.2%;
+    padding-bottom: 22px;
+     
+  }
+  #general #a-sectionContenido main #divTituloArticulos {
+    height: 77px;
+    width: 98%;
+    background-color: #E5E5E5;
+    box-shadow: 7px 7px 7px 0px black;
+  }
+  #general #a-sectionContenido main #divTituloArticulos h1 {
+    font-family: "BebasNeue";
+    font-family: "nevis";
+    font-size: 36px;
+    text-align: center;
+    line-height: 65px;
+  }
+  #general #a-sectionContenido main #a-main {
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 600px;
+  }
+  #general #a-sectionContenido main #a-main article {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 141px;
+    margin-top: 35px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #D0D0D0;
+  }
+  #general #a-sectionContenido main #a-main article label {
+    font-size: 13px;
+    background-color: black;
+    color: #FFFFFF;
+    font-family: "TrebuchetMS";
+    padding: 9px;
+    border-radius: 0px 0px 0px 5px;
+    float: right;
+  }
+  #general #a-sectionContenido main #a-main article h2 {
+    font-family: "nevis";
+    font-size: 22px;
+    margin: 11px;
+    color: #00538C;
+  }
+  #general #a-sectionContenido main #a-main article h5 {
+    font-family: "TrebuchetMS";
+    font-size: 18px;
+    margin: 8px;
+  }
+  #general #a-sectionContenido main #a-main article a {
+    text-decoration: none;
+    color: yellowgreen;
+    font-size: 21px;
+  }
+  #general #a-sectionContenido main #a-main article a:hover {
+    text-decoration: underline;
+    color: black;
+    font-size: 21px;
+  }
+
+
+  /*___________________________________________ LATERAL DERECHA ______________*/
+  #general #a-sectionContenido aside {
+    width: 24%;
+    border: indigo solid 1px;
+    float: left;
+    margin: 0.2%;
+  }
+
+  /*___________________________________________ LATERAL DERECHA para invitados*/
+  #general #a-sectionContenido aside #servH2{
+    text-align: center;
+    font-family: "nevis"; 
+    margin-top: 33px;
+    margin-left: 11px;
+    font-size: 26px;
+    color: #00538C;
+  }
+  #general #a-sectionContenido aside .h3Servicios{
+    font-family: "nevis";
+    margin-top: 33px;
+    font-size: 20px;
+    color: #008c38;
+  }
+  #general #a-sectionContenido aside #regisH2{
+    margin-top: 33px;
+    text-align: center;
+  }
+  #general #a-sectionContenido aside #regisH2 a{
+    text-align: center;
+    font-size: 19px;
+    color: #00538C;
+    background-color: white;
+     
+    padding: 5px 11px;
+    border-radius: 6px;
+  }
+  #general #a-sectionContenido aside #regisH2 a:hover{
+    background-color: rgb(67, 14, 240);
+    color: white;
+    padding: 5px 11px;
+    border-radius: 6px;
+  }
+
+  /*___________________________________________ LATERAL DERECHA para usuarios registrados*/
+  #general #a-sectionContenido aside #botonSec{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  #general #a-sectionContenido aside #botonSec .classButtonLateral {
+    margin-left: 4%;
+    margin-top: 44px;
+    width: 40%;
+    height: 33px;
+    font-size: 22px;
+    background-color: #b2f0b2;
+    color: white;
+    border-radius: 7px;
+  }
+  #general #a-sectionContenido aside #botonSec .classButtonLateral:hover{
+    background-color: #00538C;;
+  }
+  
+  #general #a-sectionContenido aside #botonSec .classButtonLateral a {
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+  }
+
+  /*___________________________________________ LATERAL DERECHA:  include('d_php/teclado.php') ______________*/
+  #general #a-sectionContenido aside #as-a-teclado {
+    margin-top: 53px;
+  }
+  #general #a-sectionContenido aside #as-a-teclado hr {
+    margin: 15px 17px;
+    border: solid 1px;
+    background-color: black;
+  }
+  /*___________________________________________ div en el archivo: d_php/teclado.php ______________*/
+  #general #a-sectionContenido aside #as-a-teclado #teclado {
+    margin-left: auto;
+    width: 90%;
+  }
+  /*___________________________________________ botones del teclado ______________*/
+  #general #a-sectionContenido aside #as-a-teclado #teclado .btn-teclado, 
+    #general #a-sectionContenido aside #as-a-teclado #teclado #d_clave {
+    margin: 7px;
+    padding: 7px;
+    background-color: #b2f0b2;
+    font-family: "MochiyPopPOne";
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    box-shadow: 5px 5px 10px;
+  }
+  #general #a-sectionContenido aside #as-a-teclado #teclado .btn-teclado:hover {
+    background-color: #0077ff;
+    color: white;
+    box-shadow: 5px 5px 10px inset;
+    border: solid 2px;
+  }
+  #general #a-sectionContenido aside #as-a-teclado #teclado #d_clave:hover {
+    background-color: #0077ff;
+    color: white;
+    box-shadow: 5px 5px 10px inset;
+    border: solid 2px;
+  }
+
+
+  /*___________________________________________ claves para el teclado ______________*/
+  #general #a-sectionContenido aside #h2clave{
+    text-align: center;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-left: 11px;
+    font-size: 30px;
+    color: #00538C;
+  }
+  #general #a-sectionContenido aside .h3clave{
+    margin-top: 13px;
+    font-size: 21px;
+    font-weight: bold;
+    color: #00538C;
+  }
+  /*___________________________________________ contratar página Web ______________*/
+  #general #a-sectionContenido aside #contratar{
+    background-color: #b2f0b2;
+    display: block;
+    margin: 0 auto;
+    padding-top: 6px;
+    border-radius: 7px;
+  }
+  #general #a-sectionContenido aside #contratar:hover{
+    background-color: white;
+    border: solid white 1px;
+  }
+  #general #a-sectionContenido aside #contratar a{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    color: #00538C;
+    background-color: white;
+    padding: 0 9px;
+    border-radius: 6px;
+  }
+
+  #general #a-sectionContenido aside #contratar a:hover{
+    background-color: rgb(67, 14, 240);
+    color: white;
+    padding: 0 9px;
+    border-radius: 6px;
+  }
+
+
+
+
+  
+  @media (max-width: 1132px) {
+    #general #a-sectionContenido {/* el lateral de la derecha pasa a la parte inferior*/
+      display: flex;
+      flex-direction: column;
+    }
+    #general #a-sectionContenido main {
+      width: 100%;
+    }
+    #general #a-sectionContenido main article {
+      height: 26%;
+    }
+    #general #a-sectionContenido aside {
+      width: 100%;
+      margin-top: 11px;
+    }
+    #general #a-sectionContenido aside .classButtonLateral {
+      margin-top: 22px;
+    }
+  }
+  
+  @media (max-width: 833px) {
+    #general {
+      margin-top: 4px;
+    }
+  }

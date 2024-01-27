@@ -1,0 +1,219 @@
+#a_section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+}
+#a_section h2{
+    text-align: center;
+    margin-bottom: 44px;
+}
+
+#a_section #iconosDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#a_section #iconosDiv .articleIcono .a_iconP{
+    text-align: center;
+}
+
+#b_section{
+    margin: 75px 25px 0px 25px;
+}
+#b_section .b_Div{
+    display: flex;
+    flex-direction: column;
+    margin: 44px;
+}
+#b_section .b_Div .b_Article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#b_section .b_Div .b_Article img{
+    width: 25%;
+    height: 25%;
+    border-radius: 22px;
+}
+@media(max-width:800px){
+    #b_section .b_Div .b_Article img{
+        width: 100px;
+        height: 100px;    
+    }
+}
+#b_section .b_Div .b_Article .b_textoDiv{
+    flex-basis: 63%;
+}
+#b_section .b_Div .b_Article .b_textoDiv #izquierdaH2{
+    margin-top: 55px;
+    color: rgb(14, 159, 248);
+}
+#b_section .b_Div .b_Article .b_textoDiv #derechaH2{
+    margin-top: 55px;
+    color: rgb(187, 162, 35);
+    text-align: right;
+}
+#b_section .b_Div .b_Article .b_textoDiv #derechaP{
+    text-align: right;
+}
+
+
+#c_section{
+    background-color: rgb(58, 57, 57);
+    padding: 44px 0px 23px 0px;
+}
+#c_section #clientes{
+    text-align: center;
+    color: white;
+}
+#c_section #iconosRedesDiv{
+    margin-top: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+#d_section{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/precios-bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: auto, auto;
+    padding-bottom: 50px;
+    padding-top: 70px;
+}
+#d_section #precios{
+    text-align: center;
+    color: white;
+}
+#d_section #targetPreciosDiv{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#d_section #targetPreciosDiv #izqPrecio{
+    background-color: white;
+    flex-basis: 24%;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+#d_section #targetPreciosDiv #izqPrecio h2{
+    text-align: center;
+    color: rgb(5, 136, 38);
+}
+#d_section #targetPreciosDiv #izqPrecio p{
+    text-align: center;
+}
+#d_section #targetPreciosDiv #izqPrecio input{
+    background-color: transparent;
+    border: solid rgb(5, 136, 38) 4px;
+    border-radius: 9px;
+    padding-right: 10%;
+    padding: 5px 10px;
+}
+
+#d_section #targetPreciosDiv #cenPrecio{
+    background-color: rgb(14, 74, 138);
+    flex-basis: 24%;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+#d_section #targetPreciosDiv #cenPrecio h2{
+    text-align: center;
+    color: white;
+}
+#d_section #targetPreciosDiv #cenPrecio p{
+    text-align: center;
+    color: white;
+}
+#d_section #targetPreciosDiv #cenPrecio input{
+    background-color: transparent;
+    border: solid white 4px;
+    border-radius: 9px;
+    padding: 5px 10px;
+    color: white;
+}
+
+#d_section #targetPreciosDiv #derPrecio{
+    background-color: white;
+    flex-basis: 24%;
+    border-radius: 8px;
+    padding-bottom: 10px;
+}
+#d_section #targetPreciosDiv #derPrecio h2{
+    text-align: center;
+    color: rgb(241, 212, 103);
+}
+#d_section #targetPreciosDiv #derPrecio p{
+    text-align: center;
+}
+#d_section #targetPreciosDiv #derPrecio input{
+    background-color: transparent;
+    border: solid color rgb(241, 212, 103) 4px;
+    border-radius: 9px;
+    padding: 5px 10px;
+    color: color rgb(241, 212, 103);
+}
+
+#e_section{
+    display: flex;
+    flex-direction: column;
+}
+#e_section #clientesTitulo{
+    margin: 55px 0px;
+    text-align: center;
+    color: rgb(68, 201, 245);
+}
+#e_section #variosClienDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#e_section #variosClienDiv .izqClient{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-bottom: 22px;
+    width: 70%;
+}
+#e_section #variosClienDiv .izqClient img{
+    border-radius: 99px;
+    width: 100px;
+    height: 100px;
+}
+#e_section #variosClienDiv .izqClient div p{
+    margin-left: 33px;
+}
+#e_section #variosClienDiv .izqClient div p a{
+    text-decoration: none;
+    color: rgb(202, 190, 9);
+}
+
+#e_section #variosClienDiv .derClient{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-bottom: 22px;
+    width: 70%;
+}
+#e_section #variosClienDiv .derClient img{
+    border-radius: 99px;
+    width: 100px;
+    height: 100px;
+}
+#e_section #variosClienDiv .derClient div p{
+    text-align: right;
+    margin-right: 22px;
+}
+#e_section #variosClienDiv .derClient div p a{
+    text-align: right;
+    text-decoration: none;
+    color: rgb(202, 190, 9);
+}

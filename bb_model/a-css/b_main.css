@@ -1,0 +1,167 @@
+
+#general main #a-section-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 46px;
+  }
+  #general main #a-section-main #a-izquierda {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #general main #a-section-main #a-izquierda .imgMain {
+    flex-basis: 47%;
+    border-radius: 4px;
+    border: solid #f0e7e7 2px;
+  }
+  #general main #a-section-main #a-izquierda .imgMain img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  #general main #a-section-main #a-izquierda .imgMain h4, #general main #a-section-main #a-izquierda .imgMain p, #general main #a-section-main #a-izquierda .imgMain button {
+    margin-left: 11px;
+  }
+  #general main #a-section-main #a-derecha {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #general main #a-section-main #a-derecha .imgMain {
+    flex-basis: 47%;
+    border-radius: 4px;
+    border: solid #f0e7e7 2px;
+  }
+  #general main #a-section-main #a-derecha .imgMain img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  #general main #a-section-main #a-derecha .imgMain h4, #general main #a-section-main #a-derecha .imgMain p, #general main #a-section-main #a-derecha .imgMain button {
+    margin-left: 11px;
+  }
+  @media (max-width: 1017px) {
+    #general main #a-section-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 46px;
+    }
+    #general main .imgMain {
+      margin-bottom: 22px;
+    }
+  }
+  @media (max-width: 595px) {
+    #general main #a-section-main #a-derecha {
+      flex-basis: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #general main #a-section-main #a-izquierda {
+      flex-basis: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #general main #a-section-main .imgMain {
+      margin-bottom: 22px;
+    }
+  }
+  #general main #b-section-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 46px;
+  }
+  #general main #b-section-main #b-izquierda {
+    flex-basis: 49%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #general main #b-section-main #b-izquierda .imgMain {
+    flex-basis: 47%;
+    border-radius: 4px;
+    border: solid #f0e7e7 2px;
+  }
+  #general main #b-section-main #b-izquierda .imgMain img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  #general main #b-section-main #b-izquierda .imgMain h4, #general main #b-section-main #b-izquierda .imgMain p, #general main #b-section-main #b-izquierda .imgMain button {
+    margin-left: 11px;
+  }
+  #general main #b-section-main #b-derecha {
+    flex-basis: 48%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #general main #b-section-main #b-derecha .imgMain {
+    flex-basis: 47%;
+    border-radius: 4px;
+    border: solid #f0e7e7 2px;
+  }
+  #general main #b-section-main #b-derecha .imgMain img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  #general main #b-section-main #b-derecha .imgMain h4, #general main #b-section-main #b-derecha .imgMain p, #general main #b-section-main #b-derecha .imgMain button {
+    margin-left: 11px;
+  }
+  @media (max-width: 1017px) {
+    #general main #b-section-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 46px;
+    }
+    #general main .imgMain {
+      margin-bottom: 22px;
+    }
+  }
+  @media (max-width: 595px) {
+    #general main #b-section-main #b-derecha {
+      flex-basis: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #general main #b-section-main #b-izquierda {
+      flex-basis: 47%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    #general main #b-section-main .imgMain {
+      margin-bottom: 22px;
+    }
+  }
+  #general footer {
+    margin: 40px 54px;
+  }
+  #general footer #c-section-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  #general footer #c-section-footer #c-uno {
+    flex-basis: 70%;
+  }
+  #general footer #c-section-footer #c-uno h6 a {
+    font-family: "Open Sans", sans-serif;
+    text-decoration: none;
+    color: RGB(116, 118, 120);
+  }
+  #general footer #c-section-footer #c-uno p a {
+    margin: 0px 15px 11px 7px;
+  }
+  #general footer #c-section-footer #c-dos {
+    flex-basis: 30%;
+  }
+  #general footer #c-section-footer #c-dos p {
+    text-align: right;
+    margin-top: 9px;
+  }
+  

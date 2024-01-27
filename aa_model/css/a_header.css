@@ -1,0 +1,109 @@
+@font-face {
+    /* página para ver letras/iconos:  https://fonts2u.com/websymbols-regular.font   */
+    font-family: "FontAwesome";
+    src: url("fonts/fontawesome-webfont.eot");
+    src: url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff") format("woff"), url("../fonts/fontawesome-webfont.woff2") format("woff2"), url("../fonts/fontawesome-webfont.ttf") format("truetype"), url("../fonts/fontawesome-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    /* página para ver letras/iconos:  https://fonts2u.com/websymbols-regular.font   */
+    font-family: "Websymbols";
+    src: url("../fonts/Websymbols/websymbols-regular-webfont.eot");
+    src: url("../fonts/Websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Websymbols/websymbols-regular-webfont.woff") format("woff"), url("../fonts/Websymbols/websymbols-regular-webfont.ttf") format("truetype"), url("../fonts/Websymbols/websymbols-regular-webfont.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+    /* 
+      12 = tamaño de letra más pequeño
+      17 = tamaño de letra más grande
+      300 = tamaño de viewport más pequeño
+      1400 = tamaño de viewport más grande
+    */
+.granSize{
+    font-size: calc(12px + (17 -12) * ((100vw - 300px) / (1400 - 300)));
+}
+.medianoSize{
+font-size: calc(10px + (13 -10) * ((100vw - 300px) / (1400 - 300)));
+}
+.pequenoSize{
+font-size: calc(8px + (12 -8) * ((100vw - 300px) / (1400 - 300)));
+}
+
+
+body{
+    padding-top: 180px;
+}
+@media(max-width:674px){
+    body{
+        padding-top: 280px;    
+    }
+}
+#generalDiv{
+    width: 100%;
+    border: solid black 1px;  
+   /* margin-top: 7%;*/
+    max-width:1574px; 
+    margin: auto;
+}
+
+#cabeceraSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat; 
+    background-size: auto, auto;
+}
+#cabeceraSec #altoArt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#cabeceraSec #altoArt div{
+    margin-top: 33px;
+    flex-basis: 40%;
+}
+ 
+#cabeceraSec #altoArt #enlacesDiv{
+    text-align: right;
+    padding-top: 13px;
+}   
+#cabeceraSec #altoArt a{
+    text-decoration: none;
+    color: white;
+    padding-top: 22px;
+    margin-left: 22px;
+    text-align: right;
+}
+
+#cabeceraSec #medioArt h2{
+    margin-top:53px;
+    text-align: center;
+    color: white;
+    
+}
+#cabeceraSec #medioArt h3{
+    text-align: center;
+    color: white;
+}
+
+#cabeceraSec #bajoArt{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 73%;
+    padding: 65px;
+    margin: 0 auto;
+}
+#cabeceraSec #bajoArt .butt {
+    margin-left: 33px;
+    /* font-family: "FontAwesome";*/
+    border: 2px solid white;
+    border-radius: 11px;
+    background-color: transparent;
+    padding: 3px 27px;
+    color: white;
+  }

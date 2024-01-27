@@ -1,0 +1,301 @@
+ 
+@font-face {
+
+  font-family: "MochiyPopPOne";
+  src: url("../fonts/MochiyPopPOne-Regular/MochiyPopPOne-Regular.ttf");
+  font-weight: normal;    
+}
+ 
+@font-face {
+  /* font-family: "Websymbols"; página para ver letras/iconos:  https://fonts2u.com/websymbols-regular.font   */
+  font-family: "Websymbols";
+  src: url("../fonts/Websymbols/websymbols-regular-webfont.eot");
+  src: url("../fonts/Websymbols/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/Websymbols/websymbols-regular-webfont.woff") format("woff"), 
+  url("../fonts/Websymbols/websymbols-regular-webfont.ttf") format("truetype"), 
+  url("../fonts/Websymbols/websymbols-regular-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /*---------------------  font-family: "nevis"; */
+  font-family: "nevis";
+  src: url("../fonts/nevis/nevis.eot"), 
+  url("../fonts/nevis/nevis.eot#?iefix") format("embedded-opentype"), 
+  url("../fonts/nevis/nevis.ttf") format("truetype"), 
+  url("../fonts/nevis/nevis.woff") format("woff"), 
+  url("../fonts/nevis/nevis.svg") format("svg");
+  font-weight: normal;
+}
+
+/* =============================================================== Estilo para cabecera*/
+#cabecera {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-image: url(../c-img/fondo.jpg);
+  background-size: 200%;
+}
+#cabecera #izq {
+  flex-basis: 35%;
+}
+#cabecera #izq h2 {
+  font-family: "MochiyPopPOne";
+  margin-left: 14px;
+  margin-top: 44px;
+  color: white;
+  font-size: 15px;
+}
+#cabecera #cen {
+  flex-basis: 30%;
+}
+#cabecera #cen h1 {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  line-height: 75px;
+}
+#cabecera #der {
+  flex-basis: 35%;
+}
+#cabecera #der img {
+  border-radius: 11px;
+  margin: 11px 14px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+
+/*-------------- Fin cabecera*/
+@media (max-width: 833px) {
+  #cabecera {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 89px;
+  }
+  #cabecera #izq {
+    height: 30px;
+  }
+  #cabecera #izq h2 {
+    font-size: 13px;
+    color: red;
+    margin-top: 34px;
+  }
+  #cabecera #cen {
+    height: 30px;
+  }
+  #cabecera #cen h1 {
+    font-size: 23px;
+  }
+  #cabecera #der {
+    height: 30px;
+  }
+  #cabecera #der img {
+    border-radius: 11px;
+    margin-right: 14px;
+  }
+}
+#b-cabecera {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  margin-top: 79px;
+}
+#b-cabecera #b-uno {
+  /* --------------- logotipo con iconos de redes sociales. fijado en cabecera*/
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: row;
+}
+#b-cabecera #b-uno #logotipo h1 {
+  font-size: 21px;
+  color: white;
+  /*line-height: 54px;*/
+  margin-top: 16px;
+}
+#b-cabecera #b-uno #logotipo h1 #span {
+  font-size: 31px;
+  color: #2600ff;
+}
+#b-cabecera #b-uno #cabRedSoc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 17px;
+}
+#b-cabecera #b-uno #cabRedSoc .rS a {
+  text-decoration: none;
+  color: white;
+}
+#b-cabecera #b-uno #cabRedSoc .rS a h2 {
+  margin: 0px 11px;
+  font-family: "Websymbols";
+  color: white;
+  font-size: 26px;
+}
+#b-cabecera #b-uno #cabRedSoc .rS a h2:hover {
+  color: #2600ff;
+}
+
+
+/* Da información, cuando se pasa el mouse por encima, sobre la importancia de tener una web. f-vistas/informacion.php*/
+#b-cabecera #information {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 60%;
+   padding-bottom: 11px;
+  justify-content: space-between;
+  margin: auto;
+}
+.contMenu1{
+  width:fit-content; 
+  visibility: hidden;
+  position: absolute;
+   width: 70%;
+  left: 0;
+  right: 0;
+  bottom: 2;
+  margin: auto;
+}
+.cabMenu {  
+  color: #FFFF66; 
+  background: #2600ff; 
+  width: 70px; 
+  height: 9px; 
+  margin: auto; 
+  margin-top: 31px;
+  margin-left: 11px;
+}
+
+.intermitente{
+  color: #FFFF66; 
+  background: #2600ff; 
+  width: 70px; 
+  height: 9px; 
+  margin: auto; 
+  margin-top: 31px;
+  margin-left: 11px;
+}
+.intermitente{
+  
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-name:parpadeo;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@-moz-keyframes parpadeo{  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes parpadeo {  
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+   100% { opacity: 1.0; }
+}
+
+@keyframes parpadeo {  
+  0% { opacity: 1.0; }
+   50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+
+
+.itMenuDes {  
+  background: #99FF99;   
+  padding: 10px 
+}
+#b-cabecera #information .informH2{
+  text-align: center;
+  font-size: 19px;
+  color: blue;
+}
+
+ 
+
+
+
+
+#b-cabecera #b-dos {
+  /* --------------- link para registrase y chatear*/
+  flex-basis: 50%;
+}
+#b-cabecera #b-dos form {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 7px;
+}
+#b-cabecera #b-dos form #btnUsuCon{
+  margin-top: 13px;
+  margin-right: 21px;
+}
+
+/*________ link, acceso a login o registro*/
+#b-cabecera #b-dos form #btnUsuCon .privado {
+  font-size: 19px;
+  margin: 35px 6px;
+  padding: 5px 11px;
+  color: rgb(75, 24, 244);
+  background-color: chartreuse;
+  border-radius: 8px;
+}
+#b-cabecera #b-dos form #btnUsuCon .privado:hover { 
+  background-color: rgb(67, 14, 240);
+  color: white;
+
+}
+/*________ link, acceso a chatear*/
+#b-cabecera #b-dos form #btnUsuCon .chatear {
+  font-size: 17px;
+  margin: 35px 6px;
+  padding: 3px 11px;
+  color: black;
+  background-color: rgb(230, 222, 222);
+  border-radius: 8px;
+  font-weight: bold;
+}
+#b-cabecera #b-dos form #btnUsuCon .chatear:hover { 
+  font-size: 17px;
+  margin: 35px 6px;
+  padding: 3px 11px;
+  color: rgb(230, 222, 222);
+  background-color: rgb(67, 14, 240);
+  font-weight: bold;
+}
+
+
+@media (max-width: 833px) {
+  #b-cabecera {
+    display: flex;
+    flex-direction: column;
+    margin-top: 79px;
+  }
+  #b-cabecera #b-dos form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+
+
+
+
+
+
