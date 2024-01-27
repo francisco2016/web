@@ -1,0 +1,149 @@
+@font-face {
+
+    font-family: "MochiyPopPOne";
+    src: url("../fonts/MochiyPopPOne-Regular/MochiyPopPOne-Regular.ttf");
+    font-weight: normal;    
+    font-style: normal; 
+}
+
+:root{
+    /* 
+      15 = tamaño de letra más pequeño
+      23 = tamaño de letra más grande
+      300 = tamaño de viewport más pequeño
+      1400 = tamaño de viewport más grande
+    */
+    --textGrandFluido: calc(15px + (23 -15) * ((100vw - 300px) / (1400 - 300))); 
+    --textMediaFluido: calc(10px + (11 -10) * ((100vw - 300px) / (1400 - 300)));
+    --textPequeFluido: calc(9px + (12 -9) * ((100vw - 300px) / (1400 - 300)));
+    }
+ 
+
+
+/*________________________ ESTILO  GENERAL*/
+#generalDiv{
+    width: 97%;
+    padding: 9px;
+    margin: auto;
+    border: blue solid 1px;
+    border-radius: 11px;
+}
+
+.h1Enunciado{
+    text-align: center;
+    color: red;
+    font-family: "MochiyPopPOne";
+    font-size: var(--textGrandFluido);
+}
+.h2Enunciado{
+    color:  rgb(65, 11, 212);
+    font-family: "MochiyPopPOne";
+    font-size: var(--textMediaFluido);
+}
+
+.btnSorteo{
+    display: block;
+    background-color: chartreuse;
+    color: rgb(14, 13, 12);
+    width: 100px;
+    text-align: center;
+    font-family: "MochiyPopPOne";
+
+    text-decoration: none;/* ------------ quita el subrrayado*/
+    font-style: verdana;
+    border-bottom:5px solid rgb(65, 11, 212);
+    transition: all 3000ms;/* -------------------------- transición para que cambie poco a poco*/
+    transition:border 500ms ;
+}
+.btnSorteo:hover{ /* --------------------------------- da animación al pasar el cursor por encima.*/
+    border-radius: 15px;
+    background-color: orangered;
+    border-bottom:5px solid orangered;
+}
+
+@keyframes fadeIn {/*-------- animación para el botón Jugar*/
+
+    0% { opacity: 0; }
+
+    100% { opacity: 1; }
+}
+.btjugar{
+    margin: 33px 44px;
+    font-size: var(--textPequeFluido);
+    background-color: RGB(239,210,9); 
+   /* background-color: chartreuse;*/
+    border-radius: 11px 0px 11px 11px;
+    animation: fadeIn 0.8s linear 2s infinite alternate both;  
+}
+
+
+.fluid-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+    
+.fluid-iten{
+    border: thin solid gray;
+    /* padding: 1rem;*/
+    padding: 3% 30%;
+    border-radius: 11px;
+}
+
+.manita{
+    cursor: pointer;
+  
+}
+
+.actualiza{
+    display: flex;
+    flex-direction: row;
+}
+
+@keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+#spinner{
+    width: 3vw;
+    height: 3vw;
+    
+    margin: auto;
+    margin-top: 33px;
+    border-radius: 50%;
+    border: 0.5vw solid rgba(0, 0, 0, 0.1);
+    border-top-color: #09f;
+    animation: spinner 1s ease-out infinite;
+}
+
+/*________________________ section c*/
+#c-section{
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+#bolasGananDiv{
+    border: rgb(60, 8, 232) solid 1px;
+    border-radius:  7px;
+    padding: 9px;
+} 
+ 
+#c-section #bolasGananDiv #spinner{
+    visibility: hidden;
+}
+/* despues de elegir juego, muestra los nº del juego*/
+#c-section #muResul_Div{
+    /*width: 245px;
+    height: 366px;*/
+    width: 245px;
+    height: 366px;
+    border: rgb(232, 8, 8) solid 1px;
+    border-radius:  7px;
+    padding: 9px;
+    margin-right: 33px;
+}
+
+
+
+
+

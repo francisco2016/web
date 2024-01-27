@@ -1,0 +1,206 @@
+/* ----------------------------------------------- GENERAL*/
+.textoFluido{
+  /* 
+    12 = tamaño de letra más pequeño
+    24 = tamaño de letra más grande
+    300 = tamaño de viewport más pequeño
+    1400 = tamaño de viewport más grande
+  */
+  font-size: calc(12px + (24 -12) * ((100vw - 300px) / (1400 - 300)));
+}
+.textFlu{
+  font-size: calc(11px + (13 -11) * ((100vw - 300px) / (1400 - 300)));
+}
+
+/*
+repeat(param1, param2):
+  param1 -> nº de veces que se repite el patrón de columnas, en este caso
+        se utiliza la propiedad especial: 'auto-fit' que le dice.. (dependiendo
+        del nº de elementos que tenga esa grid, pues va a ser le nº de veces que
+        se va a repetir cada una de esas columnas).
+  param2 -> es la unidad de medida, en este caso utilizo al función: minmax(), que
+        nos da un valor máximo y un valor mínimo; [como valor min; 200px, y
+        como tamaño máximo el espacio sobrante; una fracción '1fr'.
+
+  las filas se generan automáticamente, dependiendo del nº de elementos.
+*/
+.fluid-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+u{
+  color: red;
+  border: solid red 1px;
+}
+.a_fuente{
+  font-family: 'Radio Canada', sans-serif;
+}
+/* ----------------------------------------------- FIN FIN GENERAL*/
+
+
+
+
+/* ----------------------------------------------- cabecera y footer para todas las vistas*/
+.a_cabecera {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid black 2px;
+  border-radius: 6px;
+  width: 100%;
+}
+
+.a_cabecera .a_uno_cab{
+  border: solid black 1px;
+  flex-basis: 12%;
+}
+.a_cabecera .a_dos_cab{
+  /*border: rgb(72, 35, 35) 1px solid;*/
+  padding: 0px 11px;
+}
+.a_cabecera .a_tres_cab {
+  border: solid black 1px;
+  flex-basis: 12%;  
+}
+
+.a_cabecera .a_uno_cab img {
+  width: 100%;
+  border-radius: 6px;
+  /*margin: 8px;*/
+}
+.a_cabecera .a_dos_cab h1 {
+  text-align: center;
+   color: rgb(2, 2, 8);  
+  font-family: 'Macondo';
+  
+}
+.a_cabecera .a_tres_cab img {
+  width: 100%;
+  border-radius: 6px;
+   
+}
+
+
+.z_pie {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: solid black 2px;
+  border-radius: 6px;
+  margin-top: 55px;
+}
+.z_pie .a_uno_pie img {
+  font-size: 50px;
+}
+.z_pie .a_dos_pie h1 {
+  text-align: center;
+  color: blue;
+}
+.z_pie.a_tres_pie {
+  font-size: 100px;
+}
+
+/* ----------------------------------------------- título de ventana para todas las vistas*/
+.b_tituloVentana {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.b_tituloVentana .b_uno_titVen a {
+  text-decoration: none;
+  font-size: 48px;
+  color: blue;
+  margin-left: 33px;
+}
+.b_tituloVentana .b_dos_titVen h1 {
+  text-align: center;
+  color: blue;
+  font-size: 30px;
+}
+.b_tituloVentana .b_tres_titVen a {
+  text-decoration: none;
+  font-size: 48px;
+  color: blue;
+  margin-right: 33px;
+}
+
+
+.tableListaTop{
+  width: 53%;
+  font-size: 18px;
+  color: blue;
+}
+
+
+/* ----------------------------------------------- ventana a_editarPregunta.php*/
+
+
+ .tablaFormulario {
+  margin: auto;
+  width: 85%;
+  border: solid black 1px;
+  padding: 11px;
+}
+
+/* respuestasDePregunta($id)*/
+.cuatroResp{
+  color: blueviolet;
+}
+
+/* ------------------------------ funcion mostrarPreguntas() en baseDeDatps.php*/
+
+#muestraPreg{
+  width: 93%;  
+  border: solid 1px black ;
+  margin: auto;
+}
+#muestraPreg #pregunta{
+   
+  border: solid 1px rgb(22, 202, 25) ;
+  margin: 7px;
+   
+}
+#muestraPreg #respuestas{
+  width: 90%; 
+  border: solid 1px rgb(58, 20, 195) ;
+  margin: 7px;
+  
+}
+#muestraPreg #seleccion{
+  width: 90%;
+  border: solid 1px rgb(233, 17, 17) ;
+  margin: 7px;
+}
+
+#muestraPreg #comprobar{
+  width: 90%; 
+  border: solid 1px rgb(53, 248, 128) ;
+  margin: 7px ;
+}
+
+
+/* ------------------------------ funcion imagenDePregunta($id) en baseDeDatps.php*/
+.imgPre{
+  width: 67%;
+  display: block;
+  margin: auto;
+  margin-top: 11px;
+  border-radius: 11px;
+}
+
+/* ------------------------------ funcion ciertoSiNO($id) en baseDeDatps.php*/
+#otraPreg{
+ margin-top: 23px;
+}
+
+
+/* ----------------------------------------------- ventana z_administrador.php*/
+#adminSection #admiTable{
+  margin: auto;
+  width: 35%;
+  border: solid black 1px;
+  border-radius: 11px;
+  margin-top: 45px;
+}

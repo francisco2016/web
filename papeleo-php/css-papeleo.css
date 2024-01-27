@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Pecita";
+    src: url("../Pecita/Pecita.woff") format("woff");
+    font-display: swap;
+  }
+  
+  .pecita {
+    font-family: "Pecita", cursive;
+    font-size: 2rem;
+  }
+
+  body{
+    font-family: "Pecita", cursive;
+    padding: 32px 43px;
+
+    background-color: RGB(255,255,255);
+  }

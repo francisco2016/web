@@ -1,0 +1,121 @@
+@font-face {
+
+    font-family: "MochiyPopPOne";
+    src: url("../fonts/MochiyPopPOne-Regular/MochiyPopPOne-Regular.ttf");
+    font-weight: normal;    
+}
+
+body{
+ max-width: 1090px;
+ min-width: 270px;
+ align-items: center;
+}
+
+h1{
+    text-align: center;
+}
+
+#divGeneral{
+    width: 95%;
+    margin: 0 auto;
+}
+
+#divGeneral #contrSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+
+#divGeneral #contrSection label{
+    font-family: "MochiyPopPOne";
+    font-size: 15px;
+     
+}
+#divGeneral #contrSection input{
+    width: 80%;
+    height: 27px;
+}
+#divGeneral #contrSection textarea{
+    width: 80%; 
+}
+
+#divGeneral #contrSection #izqarticle{
+    width: 61%;
+}
+#divGeneral #contrSection #izqarticle form{
+    background-color: rgb(240, 243, 246);
+    padding: 15px 13px;
+}
+#divGeneral #contrSection #izqarticle form #contrata{
+    background-color: white;
+    border: solid white 1px;
+    border-radius: 4px;
+    font-family: "MochiyPopPOne";
+    font-size: 15px;
+}
+#divGeneral #contrSection #izqarticle form #contrata:hover{
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    border-radius: 4px;
+    font-family: "MochiyPopPOne";
+    font-size: 15px;
+}
+
+#divGeneral #contrSection #izqarticle h3{
+    font-family: "MochiyPopPOne";
+    font-size: 15px;
+    text-align: justify;
+}
+
+
+#divGeneral #contrSection #derarticle{
+    width: 29%;
+    background-color: rgb(240, 243, 246);
+    padding: 15px 13px;
+}
+#divGeneral #contrSection #derarticle h1{
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+}
+#divGeneral #contrSection #derarticle h1 i{
+    font-size: 27px;
+    margin-right: 22px;
+}
+#divGeneral #contrSection #derarticle h1 a{
+    text-decoration: none;
+    color: black;
+}
+#divGeneral #contrSection #derarticle h1 a:hover{
+    text-decoration: underline;
+    color: rgb(76, 79, 248);
+}
+
+@media (max-width: 700px) {
+    #divGeneral #contrSection #izqarticle{
+        width: 90%;
+    }
+    #divGeneral #contrSection #derarticle{
+        width: 90%;
+        background-color: rgb(240, 243, 246);
+        padding: 15px 13px;
+    }
+    #divGeneral #contrSection{
+        display: flex;
+        flex-direction: column;    
+    }
+
+    #divGeneral #contrSection input{
+        width: 80%;
+        height: 27px;
+    }
+    #divGeneral #contrSection textarea{
+        width: 80%; 
+    }
+    
+    
+}

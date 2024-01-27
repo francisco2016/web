@@ -1,0 +1,72 @@
+/*para que un grupo de cajas reunan los mismos atributos, se utiliza un selector de atributos.*/
+/* Todos los elementos de clase que empiecen por la palabra; box aplicales estos estilos*/
+[class^="box"] {
+  margin: 3rem auto; /*automático a los lados para que se centre*/
+  background-color: rgb(245, 111, 8);
+}
+
+/*----------------varias formas de hacer cajas responsives*/
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+.box-flexible {
+  /**/
+  width: 50%;
+  height: 20vh;
+}
+
+.box-flexible-dos {
+  max-width: 960px; /*-- la máxima anchura que va a crecer es: 960px*/
+  min-width: 280px; /*-- la mínima anchura que va a tenerr es: 280px*/
+  max-height: 480px; /*-- lo mismo para la altura.*/
+  min-height: 280px;
+}
+.box-flexible-3 {
+  max-width: 960px; /*-- la máxima anchura que va a crecer es: 960px*/
+  min-width: 280px; /*-- la mínima anchura que va a tenerr es: 280px*/
+  max-height: 480px; /*-- lo mismo para la altura.*/
+  min-height: 280px;
+}
+.box-flexible-4 {
+  max-width: 960px; /*-- la máxima anchura que va a crecer es: 960px*/
+  min-width: 280px; /*-- la mínima anchura que va a tenerr es: 280px*/
+  max-height: 480px; /*-- lo mismo para la altura.*/
+  min-height: 280px;
+  width: 90%;
+  height: 50vh;
+}
+
+/*
+repeat(param1, param2):
+  param1 -> nº de veces que se repite el patrón de columnas, en este caso
+        se utiliza la propiedad especial: 'auto-fit' que le dice.. (dependiendo
+        del nº de elementos que tenga esa grid, pues va a ser le nº de veces que
+        se va a repetir cada una de esas columnas).
+  param2 -> es la unidad de medida, en este caso utilizo al función: minmax(), que
+        nos da un valor máximo y un valor mínimo; [como valor min; 200px, y
+        como tamaño máximo el espacio sobrante; una fracción '1fr'.
+
+  las filas se generan automáticamente, dependiendo del nº de elementos.
+*/
+.fluid-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.fluid-iten{
+  border: thin solid gray;
+  padding: 1rem;
+}
+
+/*-----------  CONCEPTOS.
+
+      pixel .--  96_aba parte  de una pulgada del mundo real. 1 pixel = 0,026 cm
+      pulgada .--  medida de longitud del Sistema Inglés. 1 pulgada = 2,54 cm
+
+      porcentaje ( width: 50%; ) .-- hace referencia al contenedor padres.
+                        ( height: 50%; ) .-- el contenedor padre tiene que tener definida una altura fija, si no
+                                                  no servirá, 
+                                                  solución: ( height: 20vh; ) 
+                                                  por lo que se le da un % del tamaño de la pantalla.
+*/

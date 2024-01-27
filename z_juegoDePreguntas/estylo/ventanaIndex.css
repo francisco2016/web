@@ -1,0 +1,70 @@
+/* ----------------------------------------------- ventana index.php*/
+#c_vistaIndex {
+  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    border: rgb(72, 35, 35) 1px solid;
+    border-radius: 6px;
+    margin-bottom: 55px;
+}
+  
+#c_vistaIndex #c_uno {
+
+    border: black solid 1px;
+    flex-basis: 45%;
+    float: left;
+    width: 100%;
+    height: auto;
+}
+.comment{
+    width: 100%;
+}
+#c_vistaIndex #c_uno .textinput {/*----- hace responsive a los textarea*/
+    float: left;
+    width: 90%;
+    min-height: 25px;
+    outline: none;
+    resize: none;
+    border: 1px solid grey;
+    margin-bottom: 5px;
+}
+ 
+  
+#c_vistaIndex #c_dos {
+    border: black solid 1px;
+    flex-basis: 45%;
+    padding-left: 11px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#c_vistaIndex #c_dos #cd_a img {
+    width: 40%;
+    border-radius: 11px;
+    margin: 11px 23px;
+} 
+
+#c_vistaIndex #c_dos #cd_b input {
+    margin: 15px  23px;
+}
+/*
+    repeat(param1, param2):
+  param1 -> nº de veces que se repite el patrón de columnas, en este caso
+        se utiliza la propiedad especial: 'auto-fit' que le dice.. (dependiendo
+        del nº de elementos que tenga esa grid, pues va a ser le nº de veces que
+        se va a repetir cada una de esas columnas).
+  param2 -> es la unidad de medida, en este caso utilizo al función: minmax(), que
+        nos da un valor máximo y un valor mínimo; [como valor min; 200px, y
+        como tamaño máximo el espacio sobrante; una fracción '1fr'.
+
+  las filas se generan automáticamente, dependiendo del nº de elementos.
+*/
+.fluid-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  
